@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.suspeitos, .armas, .locais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36A447;
+    color: #ffffff;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+li p {
+    flex: 1;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: gray; /* Cor padrão neutra */
+}
+
+.icon.selected {
+    font-weight: bold;
+}
+
+.icon[data-status="interrogacao"].selected {
+    color: blue;
+}
+
+.icon[data-status="atencao"].selected {
+    color: orange;
+}
+
+.icon[data-status="certo"].selected {
+    color: green;
+}
+
+.icon[data-status="errado"].selected {
+    color: red;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    li p {
+        font-size: 14px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+}

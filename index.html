@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Detetive</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<div class="suspeitos">
+    <h1>SUSPEITOS</h1>
+</div>
+
+<ul class="list">
+    <li>
+        <p>Sargento</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Florista</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Chefe de cozinha</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Mordomo</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Médica</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Dançarina</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Coveiro</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Advogado</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+</ul>
+
+<div class="armas">
+    <h1>ARMAS</h1>
+</div>
+
+<ul class="list">
+    <li>
+        <p>Espingarda</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Pá</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Pé-de-Cabra</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Tesoura</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Arma Química</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Veneno</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Soco Inglês</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Faca</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+</ul>
+
+<div class="locais">
+    <h1>LOCAIS</h1>
+</div>
+
+<ul class="list">
+    <li>
+        <p>Prefeitura</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Restaurante</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Floricultura</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Boate</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Hospital</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Mansão</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Cemitério</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Praça</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Hotel</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Banco</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+    <li>
+        <p>Estação de Trem</p>
+        <div class="icons">
+            <span class="fa-solid fa-question icon" data-status="interrogacao">&#10067;</span>
+            <span class="icon" data-status="atencao">&#9888;</span>
+            <span class="icon" data-status="certo">&#10004;</span>
+            <span class="fa-solid fa-xmark icon" data-status="errado">&#10060;</span>
+        </div>
+    </li>
+</ul>
+
+</body>
+</html>
