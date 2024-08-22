@@ -44,7 +44,7 @@ li p {
 .icon {
     font-size: 24px;
     cursor: pointer;
-    color: gray; /* Cor padrão neutra */
+    color: gray;
 }
 
 .icon.selected {
@@ -67,7 +67,7 @@ li p {
     color: red;
 }
 
-/* Responsividade */
+
 @media (max-width: 400px) {
     li p {
         font-size: 14px;
