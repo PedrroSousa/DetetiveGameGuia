@@ -5,7 +5,7 @@ body {
     background-color: #f0f0f0;
 }
 
-.suspeitos, .armas, .locais {
+.suspeitos, .armas, .locais, .rodape{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ li p {
 .icon {
     font-size: 24px;
     cursor: pointer;
-    color: gray; /* Cor padrão neutra */
+    color: gray;
 }
 
 .icon.selected {
