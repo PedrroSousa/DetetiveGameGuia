@@ -67,7 +67,7 @@ li p {
     color: red;
 }
 
-/* Responsividade */
+
 @media (max-width: 400px) {
     li p {
         font-size: 14px;
