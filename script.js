@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function clearLocalStorage() {
     localStorage.clear();
-    alert("O armazenamento foi limpo.");
     closeModal();
+    location.reload();
   }
 
   function closeModal() {
