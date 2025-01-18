@@ -7,7 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (localStorage.getItem(statusKey) === 'selected') {
             icon.classList.add('selected');
         }
+
     });
+
+    if (localStorage.length > 0) {
+        document.getElementById("overlay").style.display = "flex";
+    }
 
 
     icons.forEach(icon => {
@@ -34,3 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+function clearLocalStorage() {
+    localStorage.clear();
+    alert("O armazenamento foi limpo.");
+    closeModal();
+  }
+
+  function closeModal() {
+    document.getElementById("overlay").style.display = "none";
+  }
